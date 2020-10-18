@@ -1,0 +1,49 @@
+.header {
+    position: relative;
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: -470px;
+        content: "";
+        @include bg($lines);
+        @include mq($small) {
+            left: 0;
+
+        }
+
+    }
+
+    &__container {
+        padding-bottom: 20px;
+        align-items: flex-start;
+        @include mq($small) {
+            padding-bottom: 42px;
+
+        }
+    }
+    &__logo {
+        // margin-left: 10px;
+        max-width: 150px;
+        width: 100%;
+        @include mq($small) {
+            max-width: 300px;
+
+        }
+    }
+    &__picture {
+        margin-left: auto;
+        max-width: 166px;
+
+    }
+}
+
+
+.logo {
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+    &__text {
+        @include visuallyhidden;
+    }
+}

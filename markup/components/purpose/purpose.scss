@@ -1,0 +1,32 @@
+.purpose {
+    &__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include mq($small) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 28px;
+        font-size: 18px;
+        letter-spacing: .24px;
+        line-height: 1.25;
+        @include mq($small) {
+            font-size: 25px;
+        }
+        strong {
+            font-weight: 700;
+        }
+        &:first-child {
+            margin-top: 0;
+
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+}

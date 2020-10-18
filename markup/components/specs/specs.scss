@@ -1,0 +1,108 @@
+.specs {
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    &__table-w {
+        margin-bottom: 40px;
+        overflow-x: auto;
+        @include mq($small) {
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__table {
+        margin-bottom: 80px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.table {
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+
+    @include mq($small) {
+        table-layout: fixed;
+    }
+
+    &__row {
+
+    }
+
+    &__header {
+        border-right: 1px solid #9A9C9D;
+        border-bottom: 1px solid #9A9C9D;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        // width: 25%;
+        vertical-align: middle;
+        // height: 118px;
+        background: #DCDEDE;
+        font-weight: 700;
+        font-size: 19px;
+        @include mq($small) {
+            padding-top: 30px;
+            padding-right: 15px;
+            padding-bottom: 30px;
+            padding-left: 15px;
+            font-size: 25px;
+        }
+
+        &:first-child {
+            width: 36.6%;
+            text-align: left;
+        }
+        &:last-child {
+            border-right: none;
+
+        }
+    }
+
+    &__cell {
+        border-right: 1px solid #9A9C9D;
+        border-bottom: 1px solid #9A9C9D;
+        padding-top: 14px;
+        padding-right: 15px;
+        padding-bottom: 14px;
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        @include mq($small) {
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 18px;
+        }
+
+        &:first-child {
+            text-align: left;
+        }
+
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+
+.table_half {
+    .table__header {
+        &:first-child {
+            width: 50%;
+        }
+    }
+}

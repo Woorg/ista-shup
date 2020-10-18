@@ -1,0 +1,27 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+
+.flex {
+    display: flex;
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 700;
+    @include mq($small) {
+        font-size: 44px;
+        letter-spacing: 1.08px;
+    }
+}
+
+
+.title_regular {
+    font-size: 20px;
+    @include mq($small) {
+        font-size: 40px;
+        letter-spacing: -1.48px;
+    }
+
+}
+

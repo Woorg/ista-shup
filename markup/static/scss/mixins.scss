@@ -1,0 +1,77 @@
+// Mixins.
+
+@mixin mq($media) {
+    @if $media == 300px {
+        @media (min-width: $xsmall) {
+            @content
+        }
+    }
+    @if $media == 640px {
+        @media (min-width: $small) {
+            @content
+        }
+    }
+    @else if $media == 900px {
+        @media (min-width: $medium) {
+            @content
+        }
+    }
+    @else if $media == 1200px {
+        @media (min-width: $large) {
+            @content
+        }
+    }
+}
+
+
+@mixin visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+
+}
+
+
+@mixin resetbutton {
+  border: none;
+  background: transparent;
+}
+
+@mixin resetlist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+@mixin r($width) {
+  @media only screen and (max-width: $width) {
+    @content
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width) {
+    @content
+  }
+}
+
+@mixin rh($height) {
+  @media only screen and (max-height: $height) {
+    @content
+  }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: $height) {
+    @content
+  }
+}

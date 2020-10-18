@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+        %=symbols=%
+
+        <section class="page__inner">
+
+            {{> header/header}}
+            {{> about/about}}
+            {{> detectors/detectors}}
+            {{> specs/specs}}
+
+
+
+        </section>
+
+        {{> footer/footer}}
+
+        <script src="%=static=%js/separate-js/lazyload.min.js" defer></script>
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script src="%=static=%js/separate-js/aos.js"></script>
+
+        <script>svg4everybody();</script>
+
+        <script src="%=static=%js/main%=hash=%%=min=%.js" defer></script>
+    </body>
+
+</html>

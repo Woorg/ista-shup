@@ -1,0 +1,41 @@
+.benefits {
+
+    &__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include mq($small) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        @include resetlist;
+        @include mq($small) {
+            padding-right: 40px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 33px;
+        padding-left: 50px;
+        letter-spacing: -0.3px;
+        @include mq($small) {
+            font-size: 26px;
+        }
+        &:after {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            content: "";
+            @include bg($list-item)
+        }
+    }
+
+}

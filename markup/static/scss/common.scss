@@ -1,0 +1,52 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    color: #231F20;
+    font-display: swap;
+    font-family: $g;
+    font-size: 14px;
+    font-weight: 400;
+
+    &__inner {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+        overflow: hidden;
+    }
+
+}
+
+
+.container {
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    @include mq($small) {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+        max-width: 1170px;
+    }
+
+    @include r($medium) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
