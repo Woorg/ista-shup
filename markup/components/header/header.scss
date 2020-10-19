@@ -14,6 +14,7 @@
     }
 
     &__container {
+        padding-top: 20px;
         padding-bottom: 20px;
         align-items: flex-start;
         @include mq($small) {
@@ -30,10 +31,24 @@
 
         }
     }
-    &__picture {
-        margin-left: auto;
-        max-width: 166px;
 
+    &__entry {
+        margin-left: auto;
+        font-weight: 500;
+        font-size: 16px;
+        @include mq($small) {
+            font-size: 21px;
+        }
+
+    }
+
+    &__contacts {
+        @include resetlist;
+    }
+
+    &__link {
+        color: #231F20;
+        text-decoration: none;
     }
 }
 

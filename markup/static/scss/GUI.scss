@@ -25,3 +25,21 @@
 
 }
 
+
+
+.button {
+    @include resetbutton();
+    padding: 15px 20px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-weight: 500;
+    font-size: 21px;
+    text-decoration: none;
+    background: #d63839;
+    border-radius: 25px;
+
+    @include mq($small) {
+        font-size: 25px;
+    }
+}

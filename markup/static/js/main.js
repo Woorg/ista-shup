@@ -1,4 +1,5 @@
 import { tns } from "tiny-slider/src/tiny-slider";
+import 'fslightbox';
 
 
 AOS.init({
@@ -26,19 +27,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let $aboutSlider = document.querySelector('.about__slider');
 
-        $aboutSlider = tns({
-            container: '.about__slider',
-            autoHeight: true,
-            items: 1,
-            mode: 'gallery',
-            // slideBy: 'page',
-            // autoplay: true,
-            mouseDrag: true,
-            controls: false,
-            nav: true,
-            // autoplayButton: false,
-        });
-
+    $aboutSlider = tns({
+        container: '.about__slider',
+        autoHeight: true,
+        items: 1,
+        mode: 'gallery',
+        // slideBy: 'page',
+        autoplay: true,
+        mouseDrag: true,
+        controls: false,
+        nav: true,
+        // autoplayButton: '',
+    });
 
 
 });

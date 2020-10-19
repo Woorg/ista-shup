@@ -10,14 +10,22 @@
         text-align: center;
     }
 
-    // &__schema {
-
-    // }
+    &__schema {
+        margin: auto;
+        max-width: 25%;
+        display: block;
+        cursor: pointer;
+    }
 
 
     // &__schema-img {
 
     // }
 }
+
+.fslightbox-source {
+    background-color: #FFF;
+}
+
 
 

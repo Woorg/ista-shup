@@ -8,11 +8,15 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "aos": "^3.0.0-beta.6",
+    "bilderrahmen": "^1.0.1",
+    "magnific-popup": "^1.1.0",
+    "mini-lightbox": "^3.0.8",
     "postcss-fixes": "^2.0.1",
     "postcss-preset-env": "^6.7.0",
     "tiny-slider": "^2.9.3"
   },
   "devDependencies": {
+    "fslightbox": "^3.2.2",
     "gulp": "^4.0.2"
   },
   "scripts": {

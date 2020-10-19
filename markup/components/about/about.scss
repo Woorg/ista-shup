@@ -70,6 +70,10 @@
         }
     }
 
+    [data-action] {
+        display: none;
+    }
+
     .tns-nav {
         z-index: 1;
         position: absolute;
@@ -79,21 +83,30 @@
 
         button {
             @include resetbutton();
-            position: relative;
             margin-right: 10px;
             border: 1px solid #818f8f;
             width: 14px;
             height: 14px;
+            outline: unset;
+            -webkit-tap-highlight-color: transparent;
             border-radius: 50%;
             &:last-child {
                 margin-right: 0;
             }
+            &:focus,
+            &:hover {
+                outline: unset;
+            }
         }
+
+
         .tns-nav-active {
+            position: relative;
             bottom: -1px;
             border: none;
             width: 15px;
             height: 15px;
+            outline: unset;
             background: url('../img/general/functions-item-dot.png') 0 0 / cover no-repeat;
         }
 
