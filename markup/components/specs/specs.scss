@@ -1,7 +1,11 @@
 .specs {
     &__container {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        @include mq($small) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     }
     &__title {
         margin-top: 0;
