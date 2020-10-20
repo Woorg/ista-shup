@@ -83,8 +83,8 @@
 
         button {
             @include resetbutton();
-            margin-right: 10px;
             border: 1px solid #818f8f;
+            margin-right: 10px;
             width: 14px;
             height: 14px;
             outline: unset;
@@ -119,12 +119,13 @@
         max-width: 100%;
         width: 100%;
         font-weight: 500;
-        font-size: 21px;
+        font-size: 18px;
         @include mq($small) {
             margin-right: -30px;
             margin-bottom: 0;
             padding-left: 117px;
             max-width: 66%;
+            font-size: 21px;
         }
     }
 
@@ -236,7 +237,11 @@
     &__cert-text {
         margin-left: 20px;
         font-weight: 500;
-        font-size: 21px;
+        font-size: 18px;
+        @include mq($small) {
+            font-size: 21px;
+
+        }
     }
 
 

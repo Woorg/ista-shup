@@ -12,9 +12,17 @@
 
     &__schema {
         margin: auto;
-        max-width: 50%;
         display: block;
         cursor: pointer;
+        @include mq($small) {
+            max-width: 50%;
+
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover
+        }
     }
 
 

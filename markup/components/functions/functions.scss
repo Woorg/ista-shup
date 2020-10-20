@@ -96,7 +96,11 @@
     }
 
     &__text {
-        font-size: 21px;
+        font-size: 18px;
+        @include mq($small) {
+            font-size: 21px;
+
+        }
     }
 
 }
